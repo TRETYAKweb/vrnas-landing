@@ -6,3 +6,6 @@ Img/
 
 # Claude Code local settings
 .claude/settings.local.json
+
+# Secrets (Figma personal access token)
+.env
