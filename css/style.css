@@ -1,0 +1,410 @@
+/* ===== Tokens (from Figma) ===== */
+:root {
+  --black-100: #18181b;
+  --black-80: #252532;
+  --video-bg: #21232e;
+  --white: #ffffff;
+  --grey-1: #b0b0b2;
+  --grey-2: #d1d1d1;
+  --blue: #0cbaf1;
+  --pink: #e95ce9;
+  --gradient: linear-gradient(90deg, var(--blue), var(--pink));
+  --container: 1200px;
+  --font: "Chakra Petch", sans-serif;
+}
+
+/* ===== Base ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--black-100);
+  color: var(--white);
+  font-family: var(--font);
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+h1,
+h3,
+p {
+  margin: 0;
+}
+
+.page {
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: calc(var(--container) + 32px);
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* ===== Decorative background =====
+   A 1440px layer centred on the viewport; decorations use Figma frame
+   coordinates and are allowed to spill past it on wide screens. */
+.page__bg {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 1440px;
+  height: 100%;
+  margin-left: -720px;
+  pointer-events: none;
+}
+
+.deco {
+  position: absolute;
+  max-width: none;
+  user-select: none;
+}
+
+.deco--waves {
+  top: 0;
+  left: 674.5px;
+  width: 1120px;
+  height: 405px;
+}
+
+.deco--grid {
+  top: 284px;
+  left: -1585px;
+  width: 2682px;
+  height: 721px;
+}
+
+.deco--light {
+  top: 140px;
+  left: 440px;
+  width: 760px;
+  height: 987px;
+  transform: rotate(-60deg);
+}
+
+/* ===== Buttons ===== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s, box-shadow 0.2s;
+}
+
+.btn--outline {
+  padding: 11px 23px;
+  border: 1px solid transparent;
+  background:
+    linear-gradient(var(--black-100), var(--black-100)) padding-box,
+    var(--gradient) border-box;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+}
+
+.btn--outline:hover {
+  box-shadow: 0 0 16px rgba(202, 106, 235, 0.35);
+}
+
+.btn--gradient {
+  padding: 18px 38px;
+  background: var(--gradient);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.btn--gradient:hover {
+  opacity: 0.9;
+  box-shadow: 0 0 24px rgba(233, 92, 233, 0.35);
+}
+
+/* ===== Header ===== */
+.header {
+  position: relative;
+  z-index: 2;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  height: 114px;
+  padding-top: 8px;
+}
+
+.nav {
+  display: flex;
+  gap: 64px;
+  margin-left: 241px;
+}
+
+.nav__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+  transition: color 0.2s;
+}
+
+.nav__link--active {
+  font-weight: 500;
+}
+
+.nav__link:hover {
+  color: var(--blue);
+}
+
+.header .btn--outline {
+  margin-left: auto;
+}
+
+/* ===== Hero ===== */
+.hero {
+  position: relative;
+  z-index: 1;
+}
+
+.hero__inner {
+  display: grid;
+  grid-template-columns: 1fr 526px;
+  align-items: start;
+}
+
+.hero__content {
+  padding-top: 87px;
+}
+
+.hero__title {
+  max-width: 540px;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.32px;
+}
+
+.hero__desc {
+  max-width: 446px;
+  margin-top: 12px;
+  color: var(--grey-2);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+}
+
+.hero__content .btn--gradient {
+  margin-top: 32px;
+}
+
+.hero__meta {
+  display: flex;
+  align-items: center;
+  gap: 77px;
+  margin-top: 42px;
+  padding-left: 2px;
+}
+
+.clients {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.clients__avatars {
+  display: flex;
+}
+
+.clients__avatars img {
+  width: 50.45px;
+  height: 50.45px;
+  border-radius: 50%;
+}
+
+.clients__avatars img + img {
+  margin-left: -12px;
+}
+
+.clients__text {
+  color: var(--grey-2);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+  white-space: nowrap;
+}
+
+.clients__count {
+  position: relative;
+  color: var(--white);
+  font-weight: 600;
+}
+
+.clients__underline {
+  position: absolute;
+  left: -2px;
+  top: 19px;
+}
+
+.video {
+  position: relative;
+  width: 196px;
+  height: 128px;
+  background: var(--video-bg);
+  overflow: hidden;
+}
+
+.video__thumb {
+  position: absolute;
+  left: 36.5px;
+  top: 4.4px;
+  width: 123.5px;
+  height: 123.5px;
+  object-fit: cover;
+}
+
+.video__play {
+  position: absolute;
+  left: 84px;
+  top: 50px;
+  transition: transform 0.2s;
+}
+
+.video:hover .video__play {
+  transform: scale(1.12);
+}
+
+.hero__visual {
+  position: relative;
+  justify-self: end;
+  margin-top: 13px;
+  margin-right: -1px;
+}
+
+.hero__image {
+  position: relative;
+  width: 526px;
+  height: 626px;
+  object-fit: cover;
+  object-position: top;
+}
+
+/* ===== Features card ===== */
+.features {
+  position: relative;
+  z-index: 1;
+}
+
+.features__card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 51px;
+  padding: 42px 64px 53px;
+  background: var(--black-80);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.feature__icon {
+  width: 70px;
+  height: 70px;
+}
+
+.feature__title {
+  margin-top: 42px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.feature__text {
+  margin-top: 12px;
+  color: var(--grey-1);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 1280px) {
+  .nav {
+    margin-left: auto;
+    gap: 40px;
+  }
+
+  .header .btn--outline {
+    margin-left: 40px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .hero__inner {
+    grid-template-columns: 1fr;
+  }
+
+  .hero__visual {
+    justify-self: center;
+    margin-top: 48px;
+  }
+
+  .features__card {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 40px 32px;
+  }
+
+  .feature__title {
+    margin-top: 24px;
+  }
+}
+
+@media (max-width: 860px) {
+  .nav {
+    display: none;
+  }
+
+  .header .btn--outline {
+    margin-left: auto;
+  }
+
+  .hero__content {
+    padding-top: 48px;
+  }
+
+  .hero__title {
+    font-size: 44px;
+  }
+
+  .hero__meta {
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+
+  .hero__image {
+    width: 100%;
+    height: auto;
+  }
+}

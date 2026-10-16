@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VRNas — Immerse Yourself in Virtual Reality</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="page">
+    <!-- Decorative background (coordinates of the 1440px Figma frame) -->
+    <div class="page__bg" aria-hidden="true">
+      <img class="deco deco--waves" src="assets/images/waves.svg" alt="">
+      <img class="deco deco--grid" src="assets/images/grid.svg" alt="">
+      <img class="deco deco--light" src="assets/images/light.svg" alt="">
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+      <div class="container header__inner">
+        <a class="logo" href="#" aria-label="VRNas — home">
+          <img src="assets/icons/logo.svg" width="101" height="30" alt="VRNas">
+        </a>
+
+        <nav class="nav" aria-label="Main">
+          <a class="nav__link nav__link--active" href="#">Home</a>
+          <a class="nav__link" href="#about">About us</a>
+          <a class="nav__link" href="#service">Service</a>
+          <button class="nav__link nav__link--dropdown" type="button" aria-expanded="false">
+            Page <img src="assets/icons/chevron-down.svg" width="12" height="12" alt="">
+          </button>
+          <button class="nav__link nav__link--dropdown" type="button" aria-expanded="false">
+            Blog <img src="assets/icons/chevron-down.svg" width="12" height="12" alt="">
+          </button>
+        </nav>
+
+        <a class="btn btn--outline" href="#contact">Contact us</a>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container hero__inner">
+          <div class="hero__content">
+            <h1 class="hero__title">Immerse Yourself in Virtual Reality</h1>
+            <p class="hero__desc">Experience Unforgettable Events in VR. Bring your events to life like never before with our VR services</p>
+            <a class="btn btn--gradient" href="#about">discover more</a>
+
+            <div class="hero__meta">
+              <div class="clients">
+                <div class="clients__avatars">
+                  <img src="assets/images/client-1.png" width="50" height="50" alt="">
+                  <img src="assets/images/client-2.png" width="50" height="50" alt="">
+                  <img src="assets/images/client-3.png" width="50" height="50" alt="">
+                </div>
+                <p class="clients__text">
+                  <span class="clients__count">32k+<img class="clients__underline" src="assets/icons/underline.svg" width="48" height="7" alt=""></span>
+                  Happy Client
+                </p>
+              </div>
+
+              <button class="video" type="button" aria-label="Play video">
+                <img class="video__thumb" src="assets/images/video-thumb.png" width="124" height="124" alt="">
+                <img class="video__play" src="assets/icons/play.svg" width="28" height="28" alt="">
+              </button>
+            </div>
+          </div>
+
+          <div class="hero__visual">
+            <img class="hero__image" src="assets/images/hero.png" width="526" height="626" alt="Man wearing a VR headset">
+          </div>
+        </div>
+      </section>
+
+      <!-- Features -->
+      <section class="features" id="service">
+        <div class="container">
+          <div class="features__card">
+            <article class="feature">
+              <img class="feature__icon" src="assets/icons/expertise.svg" width="70" height="70" alt="">
+              <h3 class="feature__title">Expertise</h3>
+              <p class="feature__text">Our team consists of experienced VR developers, designers, and technicians who have a passion for VR and a commitment to delivering quality work and give the best service</p>
+            </article>
+            <article class="feature">
+              <img class="feature__icon" src="assets/icons/customization.svg" width="70" height="70" alt="">
+              <h3 class="feature__title">Customization</h3>
+              <p class="feature__text">Every client is unique, and we believe every VR experience should be too. We'll work with you to create a customized solution that meets your specific needs and goals</p>
+            </article>
+            <article class="feature">
+              <img class="feature__icon" src="assets/icons/service.svg" width="70" height="70" alt="">
+              <h3 class="feature__title">Service</h3>
+              <p class="feature__text">We believe in providing exceptional customer service, from initial consultation to final delivery. Our goal is to ensure you're satisfied with every aspect of your VR experience.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
