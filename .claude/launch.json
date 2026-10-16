@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "site",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "5173", "--directory", "/Users/yevhenii_tretyak/Desktop/Projects/01.claude-code/04.test"],
+      "port": 5173
+    }
+  ]
+}
