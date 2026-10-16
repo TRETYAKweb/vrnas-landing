@@ -1,0 +1,8 @@
+# OS
+.DS_Store
+
+# Raw image exports (not used by the site, assets live in assets/)
+Img/
+
+# Claude Code local settings
+.claude/settings.local.json
