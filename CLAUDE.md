@@ -32,6 +32,8 @@ assets/images/      — фото (PNG) и декор (SVG)
 documentation/      — по одному документу на решение
 ```
 
+Figma MCP подключён в `.mcp.json`. Если инструментов Figma нет, запусти `/mcp` → figma → Authenticate.
+
 Запуск: превью `site` из `.claude/launch.json` (`python3 -m http.server 5173`).
 
 ## Прогресс
