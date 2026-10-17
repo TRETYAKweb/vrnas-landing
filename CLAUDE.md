@@ -17,6 +17,7 @@
 | `documentation/layout.md` | раскладка, контейнер, отступы |
 | `documentation/responsive.md` | адаптив, брейкпоинты, мобилка |
 | `documentation/stack.md` | токены цветов и шрифтов, стек, именование классов |
+| `documentation/deploy.md` | деплой на GitHub Pages, пути к ассетам |
 
 Новый документ добавляй в эту таблицу. Когда секция готова, пользователь запускает `/update-docs` (`.claude/skills/update-docs/`).
 
@@ -35,6 +36,8 @@ documentation/      — по одному документу на решение
 Figma MCP подключён в `.mcp.json`. Если инструментов Figma нет, запусти `/mcp` → figma → Authenticate.
 
 Запуск: превью `site` из `.claude/launch.json` (`python3 -m http.server 5173`).
+
+Прод: https://tretyakweb.github.io/vrnas-landing/ — GitHub Pages, деплоится сам при пуше в `main`.
 
 ## Прогресс
 

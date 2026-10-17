@@ -2,6 +2,8 @@
 
 Landing page for **VRNas**, a fictional VR services company. It is built pixel-close to a Figma mockup with plain HTML and CSS.
 
+**Live:** https://tretyakweb.github.io/vrnas-landing/
+
 The page is built one section at a time, with the help of [Claude Code](https://claude.com/claude-code) and the Figma MCP server.
 
 ## Stack
